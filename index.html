@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content-container">
+        <div class="firstrow-content-container">
+          <div class="left-f-row">
+            <div class="meeting-info">
+              <div class="meeting-intro">
+                <p class="meeting-name">Daily Scrum meeting</p>
+                <img src="./zoom-logo.png" alt="zoom-logo" class="zoom-logo" />
+              </div>
+
+              <p class="meeting-date">Date: 22/08/2020</p>
+              <p class="meeting-para">
+                Daily stand up for Aled team working on PRD 1Project
+              </p>
+            </div>
+
+            <div class="people-info">
+              <div class="owner-container">
+                <p class="people-category">Owner</p>
+                <img
+                  src="./profilepic.svg"
+                  alt="profile-picture"
+                  class="fa-user-circle"
+                />
+              </div>
+
+              <div class="seperator-line"></div>
+
+              <div class="watcher-container">
+                <p class="people-category">Watcher</p>
+                <div class="display-people">
+                  <img src="./profilepic.svg" alt="" class="fa-user-circle" />
+                  <img src="./profilepic.svg" alt="" class="fa-user-circle" />
+                  <img src="./profilepic.svg" alt="" class="fa-user-circle" />
+                </div>
+              </div>
+
+              <div class="seperator-line"></div>
+
+              <div class="participants-container">
+                <p class="people-category">Participants</p>
+                <div class="display-people">
+                  <img src="./profilepic.svg" alt="" class="fa-user-circle" />
+                  <img src="./profilepic.svg" alt="" class="fa-user-circle" />
+                  <img src="./profilepic.svg" alt="" class="fa-user-circle" />
+                  <img src="./profilepic.svg" alt="" class="fa-user-circle" />
+                </div>
+              </div>
+            </div>
+
+            <div class="time-info">
+              <p class="time-name">Meeting Hour</p>
+              <p class="time">3 hr 20 minutes</p>
+            </div>
+          </div>
+
+          <div class="right-f-row">
+            <nav class="navigation-tasks">
+              <div class="nav-links-left">
+                <button class="nav-agenda">Agenda</button>
+                <button class="nav-Tasks">Tasks</button>
+              </div>
+              <div class="nav-links-right">
+                <button class="detailedView-btn">Detailed View</button>
+              </div>
+            </nav>
+
+            <div class="detailed-info">
+              <div class="detailed-info-firstSection">
+                <ul class="agenda-points">
+                  <li class="li-agenda-points">UX/UI Decision Making</li>
+                  <li class="li-agenda-points">UX/UI Product Edit</li>
+                </ul>
+              </div>
+              <div class="detailed-info-secondSection">
+                <p class="section-topic-notes">Notes:</p>
+                <ul class="agenda-points-notes">
+                  <li class="li-agenda-points">
+                    Decision Points 1, Points - add actions here
+                  </li>
+                  <li class="li-agenda-points">
+                    Insight, Points - add actions here
+                  </li>
+                  <li class="li-agenda-points">
+                    Discussion, Points - add actions here
+                  </li>
+                </ul>
+              </div>
+              <div class="detailed-info-thirdSection">
+                <p class="section-topic-resources">
+                  Resources
+                  <span class="dw-links-span"> (Download links)</span>
+                </p>
+                <div class="resource-download-btns">
+                  <button class="sales-dw-btn">
+                    Sales.pptx <i class="fas fa-download"></i>
+                  </button>
+                  <button class="sales-dw-btn">
+                    Sales.pptx <i class="fas fa-download"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="second-row-container">
+          <div class="left-s-row">
+            <div class="left-s-row-buttons">
+              <button id="btn-create-fup-meeting">
+                Create follow up meeting
+              </button>
+              <button id="btn-fup-meeting">Follow up meeting</button>
+              <input type="date" id="btn-follow-up-dateset" name="Date" />
+            </div>
+          </div>
+          <div class="right-s-row"></div>
+        </div>
+      </div>
+
+      <div class="footer-container">
+        <div class="star-rating-cont">
+          <p>Meeting feedback</p>
+          <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+        </div>
+        <textarea
+          name="comment-box"
+          id="comment-box"
+          cols="50"
+          rows="5"
+          placeholder="Leave Comment"
+        ></textarea>
+        <div class="final-options">
+          <div class="conditions-radio-btn">
+            <label class="radio-container"
+              ><input type="checkbox" checked="checked" /> I agree to the
+              meeting minutes
+            </label>
+            <label class="radio-container"
+              ><input type="checkbox" /> I dont't agree to the meeting minutes
+            </label>
+          </div>
+          <div class="final-submit-buttons">
+            <button class="final-close-btn">Close</button>
+            <button class="final-submit-btn">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
